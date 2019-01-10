@@ -1,0 +1,141 @@
+\documentclass{classrep}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+
+\DeclareUnicodeCharacter{00A0}{~}
+
+\studycycle{Informatyka, studia dzienne, inż I st.}
+\coursesemester{VI}
+
+\coursename{Sztuczna inteligencja i systemy ekspertowe}
+\courseyear{2016/2017}
+
+\courseteacher{Imię Nazwisko}
+\coursegroup{dzień, 00:00}
+
+\author{
+  \studentinfo{Imię Nazwisko1}{nralbumu1} \and
+  \studentinfo{Imię Nazwisko2}{nralbumu2}
+}
+
+\title{Zadanie Numer: Temat}
+
+\begin{document}
+\maketitle
+
+{\color{blue}
+Na niebiesko zamieszczone są wskazówki odnośnie tego, co powinno się znaleźć w
+każdej sekcji sprawozdania. Po zapoznaniu się z nimi należy się do nich
+zastosować, a następnie je wykasować.}
+
+{\color{blue}
+Jeśli skład tego sprawozdania jest jednym z pierwszych kontaktów z
+\LaTeX\dywiz em, warto zapoznać się z ,,Nie za krótkim wprowadzeniem do systemu
+\LaTeX2e''\cite{l2short}.}
+
+{\color{blue}
+Klasa sprawozdania wymaga następujących pakietów:
+\begin{itemize}
+    \item zestaw klas autorstwa Marcina Wolińskiego \ppauza używana jest klasa
+    \emph{mwart} (nazwa całego pakietu: \emph{mwcls}),
+    \item pakiet \emph{polski},
+    \item pakiet \emph{url}.
+\end{itemize}}
+
+{\color{blue}
+W preambule należy wykorzystać następujące niestandardowe polecenia, aby
+dostarczyć informacje wymagane do wygenerowania sprawozdania:
+\begin{itemize}
+    \item \verb+\studycycle{...}+ \ppauza tryb i rodzaj studiów,
+    \item \verb+\coursesemester{...}+ \ppauza semestr studiów,
+    \item \verb+\coursename{...}+ \ppauza nazwa przedmiotu,
+    \item \verb+\courseyear{...}+ \ppauza bieżący rok akademicki,
+    \item \verb+\courseteacher{...}+ \ppauza prowadzący laboratoria (proszę
+    wpisywać osobę, której oddaje się sprawozdanie, a nie kierownika
+    przedmiotu!),
+    \item \verb+\coursegroup{...}+ \ppauza identyfikator grupy ćwiczeniowej,
+    \item \verb+\studentinfo[e-mail]{imię i nazwisko}{nr albumu}+ \ppauza
+    polecenie wykorzystywane \emph{tylko} w obrębie polecenia \verb+\author+
+    służy do określenia imienia i nazwiska każdego z autorów, jak również
+    numeru albumu i opcjonalnie adresu e\dywiz mail; jeśli adres nie jest
+    podawany, należy pominąć argument opcjonalny.
+\end{itemize}}
+
+{\color{blue}
+\paragraph{Uwaga:} po wydrukowaniu nie należy nic wpisywać w pola ,,Data
+oddania'' i ,,Ocena''.}
+
+\section{Cel}
+{\color{blue}
+W tej sekcji należy zamieścić zwięzły (maksymalnie dwa, trzy zdania) opis
+problemu, który był rozwiązywany (uwzględnić należy zarówno część badawczą jak
+i programistyczną).}
+
+\section{Wprowadzenie}
+{\color{blue}
+We wprowadzeniu należy zaprezentować niezbędną teorię potrzebną do realizacji
+zadania (przy czym należy tu ograniczyć się wyłącznie do tego, co było
+wykorzystane), tak aby inny student, który nigdy wcześniej nie zetknął się z tą
+tematyką, potrafił zrozumieć dalszy opis. Część ta powinna wprowadzać wszystkie
+wykorzystywane wzory, oznaczenia itp., do których należy się odwoływać w
+dalszej części niniejszego sprawozdania. Zamieszczony tu własny opis teorii (a
+nie skopiowany!) należy poprzeć odwołaniami bibliograficznymi do literatury
+zamieszczonej na końcu.}
+
+\section{Opis implementacji}
+{\color{blue}
+Należy tu zamieścić krótki i zwięzły opis zaprojektowanych klas oraz powiązań
+między nimi. Powinien się tu również znaleźć diagram UML (diagram klas)
+prezentujący najistotniejsze elementy stworzonej aplikacji. Należy także podać,
+w jakim języku programowania została stworzona aplikacja.}
+
+\section{Materiały i metody}
+{\color{blue}
+W tym miejscu należy opisać, jak przeprowadzone zostały wszystkie badania,
+których wyniki i dyskusja zamieszczane są w dalszych sekcjach. Opis ten
+powinien być na tyle dokładny, aby osoba czytająca go potrafiła wszystkie
+przeprowadzone badania samodzielnie powtórzyć w celu zweryfikowania ich
+poprawności. Przy opisie należy odwoływać się i stosować do
+opisanych w sekcji drugiej wzorów i oznaczeń, a także w jasny sposób opisać
+cel konkretnego testu. Najlepiej byłoby wyraźnie wyszczególnić (ponumerować)
+poszczególne eksperymenty tak, aby łatwo było się do nich odwoływać dalej.}
+
+\section{Wyniki}
+{\color{blue}
+W tej sekcji należy zaprezentować, dla każdego przeprowadzonego eksperymentu,
+kompletny zestaw wyników w postaci tabel, wykresów (preferowane) itp. Powinny
+być one tak ponazywane, aby było wiadomo, do czego się odnoszą. Wszystkie
+tabele i wykresy należy oczywiście opisać (opisać co jest na osiach, w
+kolumnach itd.) stosując się do przyjętych wcześniej oznaczeń. Nie należy tu
+komentować i interpretować wyników, gdyż miejsce na to jest w kolejnej sekcji.
+Tu również dobrze jest wprowadzić oznaczenia (tabel, wykresów), aby móc się do
+nich odwoływać poniżej.}
+
+\section{Dyskusja}
+{\color{blue}
+Sekcja ta powinna zawierać dokładną interpretację uzyskanych wyników
+eksperymentów wraz ze szczegółowymi wnioskami z nich płynącymi. Najcenniejsze
+są, rzecz jasna, wnioski o charakterze uniwersalnym, które mogą być istotne
+przy innych, podobnych zadaniach. Należy również omówić i wyjaśnić wszystkie
+napotkane problemy (jeśli takie były). Każdy wniosek powinien mieć poparcie we
+wcześniej przeprowadzonych eksperymentach (odwołania do konkretnych wyników).
+Jest to jedna z najważniejszych sekcji tego sprawozdania, gdyż prezentuje
+poziom zrozumienia badanego problemu.}
+
+\section{Wnioski}
+{\color{blue}
+W tej, przedostatniej, sekcji należy zamieścić podsumowanie najważniejszych
+wniosków z sekcji poprzedniej. Najlepiej jest je po prostu wypunktować. Znów,
+tak jak poprzednio, najistotniejsze są wnioski o charakterze uniwersalnym.}
+
+\begin{thebibliography}{0}
+  \bibitem{l2short} T. Oetiker, H. Partl, I. Hyna, E. Schlegl.
+    \textsl{Nie za krótkie wprowadzenie do systemu \LaTeX2e}, 2007, dostępny
+    online.
+\end{thebibliography}
+
+{\color{blue}
+Na końcu należy obowiązkowo podać cytowaną w sprawozdaniu literaturę, z której
+grupa korzystała w trakcie prac nad zadaniem.}
+
+\end{document}
