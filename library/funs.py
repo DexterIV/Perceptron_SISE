@@ -34,6 +34,7 @@ def initialize_data(filename):
 
     return data
 
+
 def initialize_data_with1stcolumn(filename):
     data = []
     dataLabels = []
@@ -70,7 +71,6 @@ def print_plot(x_axis, y_axis, title):
     pyplot.show()
 
 
-
 def calculate_results_table(number_of_classes, expected, actual, title):
     result_tab = np.zeros(shape=(number_of_classes, number_of_classes))
 
@@ -84,8 +84,8 @@ def calculate_results_table(number_of_classes, expected, actual, title):
 def parameters_as_string(hidden_nodes, learning_rate, momentum, epochs, bias):
     result = ''
     result += 'hidden nodes= ' + str(hidden_nodes) + ' | ' \
-            + 'learning rate= ' + str(learning_rate) + ' | ' \
-            + 'momentum= ' + str(momentum) + '\n' \
-            + 'epochs= ' + str(epochs) + ' | ' \
-            + 'bias: ' + str(bias)
+              + 'learning rate= ' + str(learning_rate) + ' | ' \
+              + 'momentum= ' + str(momentum) + '\n' \
+              + 'epochs= ' + str(epochs) + ' | ' \
+              + 'bias: ' + str(bias)
     return result

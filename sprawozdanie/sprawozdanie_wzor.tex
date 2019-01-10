@@ -21,7 +21,7 @@
 \coursename{Sztuczna inteligencja i systemy eskpertowe}
 \courseyear{2018/2019}
 
-\courseteacher{df inż. Krzysztof Lichy}
+\courseteacher{dr inż. Krzysztof Lichy}
 \coursegroup{piątek, 08:30}
 
 \author{%
@@ -57,7 +57,7 @@ W tym zadaniu perceptron wielowarstwowy jest uczony metodą wstecznej propagacji
 
 \section{Opis implementacji}
 {Do wykonania zadania został użyty język Python.\\\\
-Sieć neuronowa(MLP) przyjmuje jako parametry ilosć wejsć, ilosć neuronów w warstwie ukrytej, ilosć wyjsć
+Sieć neuronowa(MLP) przyjmuje jako parametry ilosć wejsć (w tym zadaniu zawsze 1), ilosć neuronów w warstwie ukrytej, ilosć wyjsć (w tym zadaniu zawsze 1)
 , współczynnik nauki, wspołczynnik momentum, wybór czy używać biasu, ilosć epok oraz wartosć próbkowania błędu.\\
 Wartosći wag są inicjalizowane w przedziale <-0.5;0,5>.\\
 Funkcją aktywacyjną jest funkcja sigmoidalna.\\
@@ -66,119 +66,67 @@ Sekwencja czynności przy testowaniu MLP: wzorzec treningowy podawany jest na we
 }
 
 \section{Materiały i metody}
-{Eksperyment 1.\\
-Zbadanie perceptronu z 4 wejsciami, 2 neuronami ukrytymi i 4 wyjsciami - ((wejścia),(wyjścia))):\\
-((1,0,0,0),(1,0,0,0)), ((0,1,0,0),(0,1,0,0)), ((0,0,1,0),(0,0,1,0)), ((0,0,0,1),(0,0,0,1)).\\
-}
+{Na wejsciu podawany losowo przetasowany znormalizowany wektor liczb od 1 do 100.
+Oczekiwane wyjscie to wartosci pierwiastka kwadratowego liczb z wejsciowego wektora.
 
-{Eksperyment 2.\\
-Klasyfikacja zbiorów na podstawie Iris Data Set\\
-4 wejscia, 3 wyjscia\\
-http://archive.ics.uci.edu/ml/datasets/Iris\\
-}
-
-{Eksperyment 3.\\
-Klasyfikacja zbiorów na podstawie seeds Data Set \\
-16 wejsc, 3 wyjscia\\
-https://archive.ics.uci.edu/ml/datasets/seeds\\
-}
-
-{Eksperyment 4.\\
-Rozpoznawanie cyfr (28x28 pixeli) na podstawie THE MNIST DATABASE
-of handwritten digits\\
-784 wejscia, 10 wyjsć\\
-http://yann.lecun.com/exdb/mnist/\\
-}
-
-{Eksperyment 5.\\
-Użycie biblioteki sklearn do rozwiązania klasyfikacji zbiorów metodą k nearest neighbours (KNN).\\
-Na podstawie seeds Data Set \\
-4 wejscia, 3 wyjscia\\
-https://archive.ics.uci.edu/ml/datasets/seeds\\}
-
-{
-Tabela wyników jest tabelą o wielkosći NxN gdzie N jest iloscią różnych klas w zbiorze danych (np 3x3 w iris data set bo są 3 gatunki irysów)
-Rzędy reprezentują klasy a kolumny reprezentują odpowiedź daną przez MLP. Idealnie wartosci powinny być niezerowe tylko w pozycjach o tym samym numerze rzędu i kolumny (po skosie)\\
+Do ostatniego ekperymentu po nauczeniu sieci zadano wektor liczb od 1 do 150 w celu okreslenia możliwosci sieci do ekstrapolacji.
 }
 \section{Wyniki}
-{Eksperyment 1\\
-W każdym z przypadków przy testowaniu trafnosć była 100 procentowa\\
+{
 Podpunkt 1.1\\
-\includegraphics{imgs/11.png}\\
+\includegraphics[scale=0.8]{imgs/1_1.png}\\
 Podpunkt 1.2\\
-\includegraphics{imgs/12.png}\\
-Podpunkt 1.3\\
-\includegraphics{imgs/13.png}\\
-Podpunkt 1.4\\
-\includegraphics{imgs/14.png}\\
-Podpunkt 1.5\\
-\includegraphics{imgs/15.png}\\
+\includegraphics[scale=0.8]{imgs/1_2.png}\\
 }  
 
 {Eksperyment 2\\
 Podpunkt 2.1\\
-\includegraphics{imgs/211.png}\\
-\includegraphics{imgs/212.png}\\
+\includegraphics[scale=0.8]{imgs/2_1.png}\\
 Podpunkt 2.2\\
-\includegraphics{imgs/221.png}\\
-\includegraphics{imgs/222.png}\\
-Podpunkt 2.3\\
-\includegraphics{imgs/231.png}\\
-\includegraphics{imgs/232.png}\\
-Podpunkt 2.4\\
-\includegraphics{imgs/241.png}\\
-\includegraphics{imgs/242.png}\\
-Podpunkt 2.5\\
-\includegraphics{imgs/251.png}\\
-\includegraphics{imgs/252.png}\\
-Podpunkt 2.6\\
-\includegraphics{imgs/261.png}\\
-\includegraphics{imgs/262.png}\\
+\includegraphics[scale=0.8]{imgs/2_2.png}\\
 }
 
 {Eksperyment 3\\
 Podpunkt 3.1\\
-\includegraphics{imgs/311.png}\\
-\includegraphics{imgs/312.png}\\
+\includegraphics[scale=0.8]{imgs/3_1.png}\\
 Podpunkt 3.2\\
-\includegraphics{imgs/321.png}\\
-\includegraphics{imgs/322.png}\\
-Podpunkt 3.3\\
-\includegraphics{imgs/331.png}\\
-\includegraphics{imgs/332.png}\\
-Podpunkt 3.4\\
-\includegraphics{imgs/341.png}\\
-\includegraphics{imgs/342.png}\\
+\includegraphics[scale=0.8]{imgs/3_2.png}\\
 }
 
 {Eksperyment 4\\
 Podpunkt 4.1\\
-\includegraphics{imgs/MNIST1_1.png}\\
-\includegraphics{imgs/MNIST1.png}\\
+\includegraphics[scale=0.8]{imgs/4_1.png}\\
 Podpunkt 4.2\\
-\includegraphics{imgs/MNIST21.png}\\
-\includegraphics{imgs/MNIST22.png}\\
+\includegraphics[scale=0.8]{imgs/4_2.png}\\
 }
+
 
 {Eksperyment 5\\
 Podpunkt 5.1\\
-\includegraphics{imgs/KNN11.png}\\
+\includegraphics[scale=0.8]{imgs/5_1.png}\\
 Podpunkt 5.2\\
-\includegraphics{imgs/KNN21.png}\\
+\includegraphics[scale=0.8]{imgs/5_2.png}\\
+
+{Eksperyment 6\\
+Podpunkt 6.1\\
+\includegraphics[scale=0.8]{imgs/longer1.png}\\
+Podpunkt 6.2\\
+\includegraphics[scale=0.8]{imgs/longer2.png}\\
+
+
 }
 
 
 
 
 \section{Dyskusja}
-{Losowa inicjalizacja wagw sieci MLP ma wyrazny wplyw na uzyskane wyniki.\\
+{
 Zwiększając ilosć epok nie zawsze sie zwiększa dokładnosć, może wystąpić przetrenowanie lub zmiany będą zbyt małe do zauważenia.\\
-Dobranie learning rate i momentum ma duże znaczenie. 
+Dobranie learning rate ma duże znaczenie. 
 Zbyt duże wartosci mogą doprowadzać do powstawania większych błędów, ale zbyt małe spowalniają proces nauki.\\
-Momentum większe od 1 ma zły wpływ na naukę sieci.\\
 Zbyt mała ilosć neuronów w warstwie ukrytej może spowodować brak nauki sieci.\\
 Przy małej ilosci neuronów w warstwie ukrytej do poprawnej nauki sieci potrzebny jest bias.\\
-W przpadku rozpoznawania cyfr można zauważyć że niektóre cyfry mogą być mylone przez sieć np. w podpunkcie 4.2 "6" ma najwięcej błędnych wyborów o wartosci "9".\\
+Ekstrapolacja w przypadku tej sieci neuronowej 
 }
 
 \section{Wnioski}
@@ -196,15 +144,6 @@ W przpadku rozpoznawania cyfr można zauważyć że niektóre cyfry mogą być m
 
 \bibitem{wiki} 
 \texttt{https://pl.wikipedia.org/wiki/Perceptron\_wielowarstwowy}
-
-\bibitem{irisi} 
-\texttt{http://archive.ics.uci.edu/ml/datasets/Iris}
-\bibitem{seedi} 
-\texttt{http://archive.ics.uci.edu/ml/datasets/seeds}
-\bibitem{mnisti} 
-\texttt{http://yann.lecun.com/exdb/mnist/}
-
-
 
 \end{thebibliography}
 
